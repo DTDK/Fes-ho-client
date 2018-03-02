@@ -1,1 +1,82 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+  background-color: rgb(64, 64, 65);
+  font-family: 'Roboto', sans-serif;
+}
+
+input{
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid grey;
+  
+  background-color: transparent;
+}
+
+input:focus {
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid green;
+  background-color: transparent;
+
+}
+
+input:focus + label{
+  color: green;
+}
+
+form.is-processing {
+  opacity: 0.5;
+}
+
+form .field {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-style: bold;
+  color: white;
+  transform: translate(0, -60px);
+}
+input:focus + label {
+    color: green;
+    
+}
+
+
+form input {
+  padding: 5px;
+  font-size: 16px;
+  color: white;
+}
+
+form .submit {
+  padding-top: 5px;
+  
+}
+
+form .submit button {
+  padding: 5px 15px;
+  text-align: center;
+  font-size: 14px;
+  background-color:transparent;
+  cursor: pointer;
+  color: white;
+}
+
+form .field.has-error label {
+  color: red;
+}
+
+form .validation {
+  margin: 5px 0 10px;
+  color: red;
+}
+
+form .field.has-error input {
+  border: 1px solid  red;
+}
+
+.signup-form{
+  
+}
