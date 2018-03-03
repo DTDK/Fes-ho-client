@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
+  newListField: String = "New List Here";
   lists: Array<any> = [{
     id: 1,
     title: 'Clean Laundry Room',

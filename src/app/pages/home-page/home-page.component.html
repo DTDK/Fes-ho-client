@@ -1,4 +1,26 @@
 
+<div class="create-list-form">
+  <form (ngSubmit)="submitForm(form)" #form="ngForm" novalidate [ngClass]="{'is-processing': processing}">
+    <div class="field" [ngClass]="{'has-error': feedbackEnabled && usernameField.errors}">
+      <input  type="text" name="newlistField" [(ngModel)]="newlistField" #newListField="ngModel" required minlength="1" [disabled]="processing"
+      />
+      <div *ngIf="feedbackEnabled && usernameField.errors">
+        <p *ngIf="passwordField.errors.required" class="validation">password required</p>
+        <p *ngIf="passwordField.errors.minlength" class="validation">password is too short</p>
+      </div>
+    </div>
+
+
+    <div class="field submit">
+      <button type="submit" [disabled]="processing">new list</button>
+      <div *ngIf="feedbackEnabled && form.invalid">
+        <p class="validation">there are errors in the form, please review the fields</p>
+      </div>
+    </div>
+  </form>
+</div>
+
+
 <ul class="lists">
   <li class="list" *ngFor="let list of lists">
     <p>{{list.title}}</p>

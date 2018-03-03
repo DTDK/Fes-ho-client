@@ -21,3 +21,11 @@ ul {
 .list p {
   margin: 0 0 8px 0;
 }
+
+form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 80px;
+}

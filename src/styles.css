@@ -8,7 +8,6 @@ input{
   border: 0;
   outline: 0;
   border-bottom: 1px solid grey;
-  
   background-color: transparent;
 }
 
@@ -49,6 +48,7 @@ form input {
   padding: 5px;
   font-size: 16px;
   color: white;
+  margin-right: 15px;
 }
 
 form .submit {
@@ -57,9 +57,10 @@ form .submit {
 }
 
 form .submit button {
-  padding: 5px 15px;
+  padding: 5px 10px;
   text-align: center;
   font-size: 14px;
+  font-weight: 200;
   background-color:transparent;
   cursor: pointer;
   color: white;
@@ -70,6 +71,7 @@ form .field.has-error label {
 }
 
 form .validation {
+  font-weight: 300;
   margin: 5px 0 10px;
   color: red;
 }
