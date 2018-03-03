@@ -1,8 +1,11 @@
 <header id="site-header">
-  <div class="header-container">
-    
-    <h1 class="site-title"><a [routerLink]="'/'">Fes-ho</a></h1>
-
+  <div class="header-container" [ngClass]="{'logo-left': !!user}" >
+   
+      <h1 class="site-title md-title"><a [routerLink]="'/'">Fes-ho</a></h1>
+   
+     <div *ngIf="!!user">
+      <h2 class="lists-title">Lists</h2>
+    </div>
     <div [ngClass]="{'is-user': user, 'is-anon': anon}">
       <div *ngIf="loading">
         <span class="username text">loading...</span>
@@ -11,13 +14,15 @@
         <a [routerLink]="['/profile']">{{user.username}}</a>
         <a (click)="logout()">logout</a>
       </div>
-      <div *ngIf="!loading && anon">
+      <div *ngIf="!loading && anon && router.url != '/login'">
         <a [routerLink]="['/login']">login</a>
+      </div>
+      <div *ngIf="!loading && anon && router.url != '/signup'">
         <a [routerLink]="['/signup']">signup</a>
       </div>
     </div>
-
   </div>
+  <hr>
 </header>
 
 <div id="site-main" class="container">

@@ -1,6 +1,7 @@
 body{
   background-color: rgb(64, 64, 65);
   font-family: 'Roboto', sans-serif;
+  
 }
 
 input{
@@ -77,6 +78,4 @@ form .field.has-error input {
   border: 1px solid  red;
 }
 
-.signup-form{
-  
-}
+

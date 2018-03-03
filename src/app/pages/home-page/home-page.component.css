@@ -1,0 +1,23 @@
+ul {
+ list-style: none;
+ color: white;
+ font-size: 24px;
+ padding-left:10px;
+}
+
+.lists {
+ display:flex;
+ flex-flow: column;
+ align-items: flex-start;
+ font-weight: 300;
+}
+
+.list {
+  border-bottom: 1px solid red;
+  width: 430px;
+  margin: 0 0 20px 0;
+}
+
+.list p {
+  margin: 0 0 8px 0;
+}

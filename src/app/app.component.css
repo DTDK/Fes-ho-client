@@ -1,27 +1,57 @@
+
 .header-container{
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: baseline;
+  margin:0;
 }
 
 .user-logout{
   position: relative;
-  left: 50px;
+  bottom: 35px;;
+  color: white;
 }
+
+.container{
+  display: flex;
+  flex-flow: column;
+  align-content: flex-end;
+}
+
+
 
 .site-title{
   font-family: 'Pacifico', cursive;
   font-size: 50px;
   text-align: center;
   color: rgb(36, 119, 70);
-  margin: 20px 0 140px 0;
-  
+  margin: 0;
 }
 
 .site-title a{
   color: rgb(36, 119, 70);
   text-decoration: none;
+  margin:0;
+}
+
+.lists-title{
+  font-weight: 300;
+  color: white;
+  
+}
+
+.logo-left{
+  justify-content: space-around;
+}
+
+hr{
+  margin: 0 0 120px 0;
+  border: 0;
+  border-bottom: 1px dashed #ccc;
+  background: #999;
+  position: relative;
+  bottom: 10px;
 }
 
 
