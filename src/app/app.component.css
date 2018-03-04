@@ -1,6 +1,6 @@
 
-#site-header{
-  margin-bottom: 160px;
+.header-margin-control{
+  margin-bottom: 10px;
 }
 
 .header-container{
@@ -74,5 +74,16 @@ hr{
   font-weight: 100;
 }
 
+.login-link{
+  position: relative;
+  left: 60%;
+}
 
+.login-link a{
+  color: white;
+  font-weight: 100;
+}
 
+.header-margin-control{
+  
+}
