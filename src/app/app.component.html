@@ -11,13 +11,13 @@
         <span class="username text">loading...</span>
       </div>
       <div class="user-logout"*ngIf="!loading && !!user">
-        <a [routerLink]="['/profile']">{{user.username}}</a>
-        <a (click)="logout()">logout</a>
+        <a class="username"[routerLink]="['/profile']">{{user.username}}</a>
+        <a class="logout"(click)="logout()">logout</a>
       </div>
       <div *ngIf="!loading && anon && router.url != '/login'">
         <a [routerLink]="['/login']">login</a>
       </div>
-      <div *ngIf="!loading && anon && router.url != '/signup'">
+      <div class="signup-link" *ngIf="!loading && anon && router.url != '/signup'">
         <a [routerLink]="['/signup']">signup</a>
       </div>
     </div>

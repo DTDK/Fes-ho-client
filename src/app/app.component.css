@@ -1,4 +1,8 @@
 
+#site-header{
+  margin-bottom: 160px;
+}
+
 .header-container{
   display: flex;
   flex-flow: row nowrap;
@@ -11,10 +15,16 @@
   position: relative;
   bottom: 35px;;
   color: white;
+  font-weight: 100;
 }
 
-.container{
- 
+.username{
+  color: white;
+  cursor: default;
+}
+
+.logout{
+   cursor:pointer;
 }
 
 
@@ -24,7 +34,9 @@
   font-size: 50px;
   text-align: center;
   color: rgb(36, 119, 70);
+  text-shadow: 1px 1px 12px rgba(0, 0, 8, .1);
   margin: 0;
+
 }
 
 .site-title a{
@@ -52,7 +64,15 @@ hr{
   bottom: 10px;
 }
 
+.signup-link{
+  position: relative;
+  left: 60%;
+}
 
+.signup-link a{
+  color: white;
+  font-weight: 100;
+}
 
 
 

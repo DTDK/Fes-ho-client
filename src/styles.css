@@ -80,4 +80,11 @@ form .field.has-error input {
   border: 1px solid  red;
 }
 
+a{
+  text-decoration: none;
+}
 
+a: visited{
+  text-decoration: none;
+  color: white;
+}
