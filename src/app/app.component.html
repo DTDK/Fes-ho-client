@@ -1,4 +1,4 @@
-<header id="site-header" [ngClass]="{'header-margin-control': !!user}">
+<header class="site-header" [ngClass]="{'header-margin-control': !!user}">
   <div class="header-container" [ngClass]="{'logo-left': !!user}" >
    
       <h1 class="site-title md-title"><a [routerLink]="'/'">Fes-ho</a></h1>
@@ -15,10 +15,10 @@
         <a class="logout"(click)="logout()">logout</a>
       </div>
       <div class="login-link" *ngIf="!loading && anon && router.url != '/login'">
-        <a [routerLink]="['/login']">login</a>
+        <a [routerLink]="['/login']">Go to login</a>
       </div>
       <div class="signup-link" *ngIf="!loading && anon && router.url != '/signup'">
-        <a [routerLink]="['/signup']">signup</a>
+        <a [routerLink]="['/signup']">Go to signup</a>
       </div>
     </div>
   </div>

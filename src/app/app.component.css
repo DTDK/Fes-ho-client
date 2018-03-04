@@ -1,6 +1,11 @@
 
 .header-margin-control{
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
+  
+}
+
+header{
+  margin: 0 0 120px 0;
 }
 
 .header-container{
@@ -9,40 +14,44 @@
   justify-content: center;
   align-items: baseline;
   margin:0;
+  background-color: rgb(180, 180, 180);
 }
 
 .user-logout{
-  position: relative;
-  bottom: 35px;;
+  
   color: white;
   font-weight: 100;
 }
 
 .username{
-  color: white;
+  color: rgb(172, 172, 172);
   cursor: default;
+  font-weight: 100;
 }
 
 .logout{
    cursor:pointer;
+   font-weight: 100;
+   color: rgb(241, 211, 79);
 }
 
 
 
 .site-title{
   font-family: 'Pacifico', cursive;
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
   color: rgb(36, 119, 70);
   text-shadow: 1px 1px 12px rgba(0, 0, 8, .1);
   margin: 0;
-
+  
 }
 
 .site-title a{
   color: rgb(36, 119, 70);
   text-decoration: none;
   margin:0;
+  padding: 0;
 }
 
 .lists-title{
@@ -60,8 +69,7 @@ hr{
   border: 0;
   border-bottom: 1px dashed #ccc;
   background: #999;
-  position: relative;
-  bottom: 10px;
+  
 }
 
 .signup-link{
@@ -84,6 +92,3 @@ hr{
   font-weight: 100;
 }
 
-.header-margin-control{
-  
-}
