@@ -1,4 +1,4 @@
 export const environment = {
-  apiUrl: 'http://foobar-server.herokuapp.com',
+  apiUrl: 'https://fes-ho-server.herokuapp.com',
   production: true
 };
