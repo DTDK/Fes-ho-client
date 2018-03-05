@@ -13,9 +13,12 @@ ul {
 }
 
 .list {
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid rgb(102, 102, 102);
+  background-color: rgba(124, 124, 124, 0.3);
+  border-radius: 6px;
   width: 90%;
   margin: 0 0 20px 0;
+  padding: 5px 10px;
 }
 
 .list p {

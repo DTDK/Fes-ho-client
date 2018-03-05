@@ -14,7 +14,8 @@ header{
   justify-content: center;
   align-items: baseline;
   margin:0;
-  background-color: rgb(180, 180, 180);
+  background-color: rgb(44, 44, 44);
+  padding: 0;
 }
 
 .user-logout{
@@ -67,8 +68,8 @@ header{
 hr{
   margin: 0 10px 40px 10px;
   border: 0;
-  border-bottom: 1px dashed #ccc;
-  background: #999;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(44, 44, 44, 0), rgba(100, 100, 100, 0.75), rgba(44, 44, 44, 0));
   
 }
 
