@@ -1,6 +1,6 @@
 
 <div class="create-list-form">
-  <form (ngSubmit)="submitForm(form)" #form="ngForm" novalidate [ngClass]="{'is-processing': processing}">
+  <!-- <form (ngSubmit)="submitForm(form)" #form="ngForm" novalidate [ngClass]="{'is-processing': processing}">
     <div class="field" [ngClass]="{'has-error': feedbackEnabled && usernameField.errors}">
       <input  type="text" name="newlistField" [(ngModel)]="newlistField" #newListField="ngModel" required minlength="1" [disabled]="processing"
       />
@@ -17,7 +17,7 @@
         <p class="validation">there are errors in the form, please review the fields</p>
       </div>
     </div>
-  </form>
+  </form> -->
 </div>
 
 

@@ -24,9 +24,15 @@ export class HomePageComponent implements OnInit {
     pending: 13
   }];
 
+  processing = false;
+  feedbackEnabled = false;
+
   constructor() { }
 
   ngOnInit() {
   }
+  
+
+  submitForm(form) {}
 
 }
