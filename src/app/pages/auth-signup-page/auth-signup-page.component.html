@@ -1,4 +1,4 @@
-<div >
+<div class="signup-form-container">
   <form class="signup-form" (ngSubmit)="submitForm(form)" #form="ngForm" novalidate [ngClass]="{'is-processing': processing}">
 
     <div class="field username" [ngClass]="{'has-error': feedbackEnabled && usernameField.errors}">

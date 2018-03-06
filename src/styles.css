@@ -57,14 +57,16 @@ form .submit {
 }
 
 form .submit button {
-  padding: 5px 10px;
+  padding: 2px 30px;
   text-align: center;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 100;
-  background-color:transparent;
+  background-color: rgb(0, 161, 75);
   border-radius: 2px;
+  border: none;
   cursor: pointer;
   color: white;
+  margin: 0 5px;
 }
 
 form .field.has-error label {

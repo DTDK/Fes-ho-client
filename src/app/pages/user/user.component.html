@@ -1,0 +1,52 @@
+<!--<div class="create-list-form">
+   <form (ngSubmit)="submitForm(form)" #form="ngForm" novalidate [ngClass]="{'is-processing': processing}">
+    <div class="field" [ngClass]="{'has-error': feedbackEnabled && usernameField.errors}">
+      <input  type="text" name="newlistField" [(ngModel)]="newlistField" #newListField="ngModel" required minlength="1" [disabled]="processing"
+      />
+      <div *ngIf="feedbackEnabled && usernameField.errors">
+        <p *ngIf="passwordField.errors.required" class="validation">password required</p>
+        <p *ngIf="passwordField.errors.minlength" class="validation">password is too short</p>
+      </div>
+    </div>
+
+
+    <div class="field submit">
+      <button type="submit" [disabled]="processing">new list</button>
+      <div *ngIf="feedbackEnabled && form.invalid">
+        <p class="validation">there are errors in the form, please review the fields</p>
+      </div>
+    </div>
+  </form> 
+</div>-->
+<div class="form">
+  <div>
+    <input type="text" name="newlistField" [(ngModel)]="newlistField" #newListField="ngModel" required minlength="1" [disabled]="processing" value="Create New List">
+  </div>
+  <div class="field submit">
+    <button type="submit" [disabled]="processing">new list</button>
+  </div>
+</div>
+<ul class="lists">
+  <div class="list-container">
+    <li class="list" *ngFor="let list of lists">
+      <div class="checkbox-container">
+        <input type="radio" id="t-option" name="selector">
+        <div class="check"></div>
+      </div>
+      <div class="list-title">
+        <p>{{list.title}}</p>
+      </div>
+      <div class="list-items status">
+        <div class="completed">
+          <p>{{list.completed}}</p>
+        </div>
+        <div class="pending status">
+          <p>{{list.pending}}</p>
+        </div>
+        <div class="trash">
+          <img src="../../assets/images/trash-icon.svg">
+        </div>
+      </div>
+    </li>
+  </div>
+</ul>

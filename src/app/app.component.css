@@ -14,7 +14,7 @@
 .header-container{
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: baseline;
   margin:0;
   padding: 0;
@@ -25,30 +25,50 @@
   margin: 5px 0 0 0;
 }
 
+.site-title-user{
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  font-weight: 350;
+  text-align: center;
+  text-shadow: 1px 1px 12px rgba(0, 0, 8, .1);
+  margin: 0;
+}
+
+.site-title-user a:visited {
+  color: rgb(0, 161, 75);
+  text-decoration: none;
+  margin:0;
+  padding: 0;
+}
+
 
 .site-title{
   font-family: 'Pacifico', cursive;
   font-size: 90px;
   font-weight: 350;
   text-align: center;
-  color: rgb(0, 161, 75);
   text-shadow: 1px 1px 12px rgba(0, 0, 8, .1);
   margin: 0;
 }
 
-.site-title a{
+.site-title-all{
+ color: rgb(0, 161, 75);
+}
+
+.site-title a:visited {
   color: rgb(0, 161, 75);
   text-decoration: none;
   margin:0;
   padding: 0;
-  
 }
 
+
 .login-signup-btns{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+ position:relative;
+ left: 80px;
+ bottom: 30px;
 }
+
 
 .username{
   color: rgb(172, 172, 172);
@@ -83,33 +103,27 @@ hr{
   
 }
 
-
-
-
-.signup-link a{
-  color: white;
-  font-weight: 100;
-}
-
-
-.login-link a{
-  color: white;
-  font-weight: 100;
-}
-
 footer{
-  height: 150px;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
+  
   background-color: rgb(0, 161, 75);
+}
+.footer-signup-container{
+  padding: 30px 40% 60px 40%;
   
 }
 
-.signup-btn{
-  margin: 5% 45%;
+.footer-signup-btn{
+  margin-bottom: 40px;
+}
+
+.signup-link-btn{
+  background-color: rgb(65, 65, 65);
+  padding: 4px 15px 6px 15px;
+  text-align: center;
+  border-radius: 2px;
+
 }
 
 .container{
-  margin: 0 0 160px 0;
+ 
 }

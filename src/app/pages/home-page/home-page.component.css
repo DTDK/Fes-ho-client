@@ -1,34 +1,52 @@
-ul {
- list-style: none;
- color: white;
- font-size: 18px;
- padding-left:10px;
+.phrase{
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
 }
 
-.lists {
- display:flex;
- flex-flow: column;
- align-items: flex-start;
- font-weight: 300;
+.phrase p {
+ margin: 15px 0 40px 0;
+
+}
+.phrase span{
+  font-weight: 100;
+  
 }
 
-.list {
-  border-bottom: 1px solid rgb(102, 102, 102);
-  background-color: rgba(124, 124, 124, 0.3);
-  border-radius: 6px;
-  width: 90%;
-  margin: 0 0 20px 0;
-  padding: 5px 10px;
+.paragraph{
+  margin: 0 40px;
+  font-size: 22px;
+  color: white;
+  font-weight: 100;
 }
 
-.list p {
-  margin: 0 0 8px 0;
+.paragraph p{
+  margin-top: 2px;
 }
 
-form{
+.login-signup-btns{
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: center;
-  align-items: baseline;
-  margin-bottom: 80px;
+  position: relative;
+  bottom: 20px;
+}
+
+.top-login-btn{
+  background-color: rgb(0, 161, 75);
+  padding: 2px 30px;
+  margin: 0 5px;
+}
+.link-btn{
+  color: white;
+  font-weight: 100;
+  border-radius: 2px;
+}
+
+.top-signup-btn{
+  background-color: rgb(0, 161, 75);
+  padding: 2px 20px;
+  margin: 0 5px;
 }
