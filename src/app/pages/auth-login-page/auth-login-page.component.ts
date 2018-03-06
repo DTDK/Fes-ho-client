@@ -33,7 +33,7 @@ export class AuthLoginPageComponent implements OnInit {
       this.authService.login(data)
         .then((result) => {
           // ... handle result, reset form, etc...
-          this.router.navigate(['/']) // user goes here after signup
+          this.router.navigate(['/lists']) // user goes here after signup
         })
         .catch((err) => {
           this.error = err.error.error; // :-)

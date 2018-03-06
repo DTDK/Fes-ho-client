@@ -15,9 +15,11 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { AuthLoginPageComponent } from './pages/auth-login-page/auth-login-page.component';
 import { AuthSignupPageComponent } from './pages/auth-signup-page/auth-signup-page.component';
+import { ListsComponent } from './pages/lists/lists.component';
 
 
 const routes: Routes = [
+  { path: 'lists', component: ListsComponent },
   { path: '', component: HomePageComponent, canActivate: [InitAuthGuardService] },
   { path: 'login', component: AuthLoginPageComponent, canActivate: [RequireAnonGuardService] },
   { path: 'signup', component: AuthSignupPageComponent, canActivate: [RequireAnonGuardService] },
@@ -30,7 +32,8 @@ const routes: Routes = [
     AppComponent,
     HomePageComponent,
     AuthLoginPageComponent,
-    AuthSignupPageComponent
+    AuthSignupPageComponent,
+    ListsComponent
   ],
   imports: [
     BrowserModule,

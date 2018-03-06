@@ -1,7 +1,7 @@
 <header class="site-header" [ngClass]="{'header-margin-control': !!user}">
-  <div class="header-container" [ngClass]="{'logo-left': !!user}" >
+  <div class="landing-container" [ngClass]="{'header-container': !!user}" >
    
-      <h1 class="site-title md-title"><a [routerLink]="'/'">Fes-ho</a></h1>
+      <h1 class="site-title"><a [routerLink]="'/'">Fes-ho</a></h1>
    
      <div *ngIf="!!user">
       <h2 class="lists-title">Lists</h2>
@@ -14,18 +14,28 @@
         <a class="username"[routerLink]="['/profile']">{{user.username}}</a>
         <a class="logout"(click)="logout()">logout</a>
       </div>
-      <div class="login-link" *ngIf="!loading && anon && router.url != '/login'">
-        <a [routerLink]="['/login']">Go to login</a>
-      </div>
-      <div class="signup-link" *ngIf="!loading && anon && router.url != '/signup'">
-        <a [routerLink]="['/signup']">Go to signup</a>
+      <div class="login-signup-btns">
+        <div class="login-link" *ngIf="!loading && anon && router.url != '/login'">
+          <a [routerLink]="['/login']">login</a>
+        </div>
+        <div class="signup-link" *ngIf="!loading && anon && router.url != '/signup'">
+          <a [routerLink]="['/signup']"><button class="btn signup_btn">signup</button></a>
+        </div>
       </div>
     </div>
   </div>
-  <hr>
+  <div *ngIf="!!user">
+   <hr>
+  </div>
 </header>
 
 <div id="site-main" class="container">
   <router-outlet></router-outlet>
 </div>
-
+<footer>
+    <div *ngIf="!loading && anon && router.url != '/signup'">
+      <a [routerLink]="['/signup']">
+        <button class="btn signup-btn">signup</button>
+      </a>
+    </div>
+</footer>
