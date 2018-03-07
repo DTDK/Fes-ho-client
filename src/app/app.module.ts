@@ -16,11 +16,12 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { AuthLoginPageComponent } from './pages/auth-login-page/auth-login-page.component';
 import { AuthSignupPageComponent } from './pages/auth-signup-page/auth-signup-page.component';
 import { UserComponent } from './pages/user/user.component';
+import { ListService } from './services/list.service';
 
 
 const routes: Routes = [
-  { path: 'user', component: UserComponent },
-  { path: '', component: HomePageComponent, canActivate: [InitAuthGuardService] },
+  { path: 'user', component: UserComponent},
+  { path: '', component: HomePageComponent, canActivate: [RequireAnonGuardService] },
   { path: 'login', component: AuthLoginPageComponent, canActivate: [RequireAnonGuardService] },
   { path: 'signup', component: AuthSignupPageComponent, canActivate: [RequireAnonGuardService] },
   //{ path: 'page', component: ... , canActivate: [RequireUserGuardService] },
@@ -46,7 +47,8 @@ const routes: Routes = [
     AuthService,
     InitAuthGuardService,
     RequireAnonGuardService,
-    RequireUserGuardService
+    RequireUserGuardService,
+    ListService
   ],
   bootstrap: [AppComponent]
 })

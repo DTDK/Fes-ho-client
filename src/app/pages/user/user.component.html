@@ -18,14 +18,15 @@
     </div>
   </form> 
 </div>-->
-<div class="form">
-  <div>
-    <input type="text" name="newlistField" [(ngModel)]="newlistField" #newListField="ngModel" required minlength="1" [disabled]="processing" value="Create New List">
+<form (ngSubmit)="submitForm(form)" #form="ngForm" novalidate [ngClass]="{'is-processing': processing}">
+  <div class="new-list-input">
+    <input type="text" name="newList" [(ngModel)]="newList" #newListField="ngModel" required minlength="1" [disabled]="processing" placeholder="Create New List">
   </div>
   <div class="field submit">
-    <button type="submit" [disabled]="processing">new list</button>
+    <button type="submit" [disabled]="processing">newlist</button>
   </div>
-</div>
+</form>
+
 <ul class="lists">
   <div class="list-container">
     <li class="list" *ngFor="let list of lists">

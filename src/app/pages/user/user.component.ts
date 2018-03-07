@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ListService } from '../../services/list.service';
 
 @Component({
   selector: 'app-user',
@@ -8,29 +9,34 @@ import { Component, OnInit } from '@angular/core';
 export class UserComponent implements OnInit {
   processing = false;
   feedbackEnabled = false;
-  newListField: String = "New List Here";
-  lists: Array<any> = [{
-    id: 1,
-    title: 'Clean Laundry Room',
-    completed: 2,
-    pending: 3
-  }, {
-    id: 2,
-    title: 'Fix water heater',
-    completed: 4,
-    pending: 3
-  }, {
-    id: 3,
-    title: 'Tuesday 13',
-    completed: 2,
-    pending: 13
-  }];
+  newList: String;
 
-  constructor() { }
+  
+  // lists: Array<any> = [{
+  //   id: 1,
+  //   title: 'Clean Laundry Room',
+  //   completed: 2,
+  //   pending: 3
+  // }, {
+  //   id: 2,
+  //   title: 'Fix water heater',
+  //   completed: 4,
+  //   pending: 3
+  // }, {
+  //   id: 3,
+  //   title: 'Tuesday 13',
+  //   completed: 2,
+  //   pending: 13
+  // }];
+
+  constructor(private listService: ListService) { }
 
   ngOnInit() {
   }
 
-  submitForm(form) { }
+  submitForm(form) { 
+    this.listService.create(this.newList)
+      .then()
+  }
 
 }

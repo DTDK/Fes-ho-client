@@ -3,8 +3,8 @@
     <div>
       <h1 class="site-title-all" [ngClass]="{'site-title-user': !!user, 'site-title': !user}" ><a [routerLink]="'/'">Fes-ho</a></h1>
     </div>
-    <div *ngIf="!!user">
-      <h2 class="lists-title">Lists</h2>
+    <div class="lists-title-container"*ngIf="!!user">
+      <h2 class="lists-title"> Lists</h2>
     </div>
     <div [ngClass]="{'is-user': user, 'is-anon': anon}">
       <div *ngIf="loading">
